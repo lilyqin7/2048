@@ -756,3 +756,176 @@ hr {
     margin-top: 90px !important; }
   .game-message .lower {
     margin-top: 30px !important; } }
+
+
+
+/* ==================================
+   2048 - Pastel Theme
+   ================================== */
+
+body {
+  background: #fff7fb;
+  color: #665b70;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+/* Heading */
+h1.title {
+  color: #c68eb9;
+  font-weight: 800;
+  text-shadow: 2px 3px 0 #f9dfef;
+}
+
+/* Score boxes */
+.score-container,
+.best-container {
+  background: #d9c5ed;
+  color: #ffffff;
+  border-radius: 12px;
+}
+
+.score-container::after,
+.best-container::after {
+  color: #ffffff;
+}
+
+/* Instructions */
+.game-intro,
+.game-explanation {
+  color: #807087;
+}
+
+strong {
+  color: #ae7fa9;
+}
+
+/* Buttons */
+.restart-button,
+.retry-button,
+.keep-playing-button {
+  background: #e9a9ca;
+  color: #ffffff;
+  border-radius: 12px;
+  transition: background 0.2s ease,
+              transform 0.2s ease;
+}
+
+.restart-button:hover,
+.retry-button:hover,
+.keep-playing-button:hover {
+  background: #d990b8;
+  transform: translateY(-2px);
+}
+
+/* Board */
+.game-container {
+  background: #d8c7e6;
+  border-radius: 14px;
+}
+
+/* Empty grid cells */
+.grid-cell {
+  background: rgba(255, 255, 255, 0.35);
+  border-radius: 9px;
+}
+
+/* Tile appearance */
+.tile .tile-inner {
+  border-radius: 9px;
+  color: #665b70;
+  font-weight: 700;
+}
+
+/* Individual tile colors */
+.tile.tile-2 .tile-inner {
+  background: #ffe5ef;
+  color: #9b718b;
+}
+
+.tile.tile-4 .tile-inner {
+  background: #f9d5e5;
+  color: #956780;
+}
+
+.tile.tile-8 .tile-inner {
+  background: #e6d9fa;
+  color: #79658e;
+}
+
+.tile.tile-16 .tile-inner {
+  background: #d6e8ff;
+  color: #607eab;
+}
+
+.tile.tile-32 .tile-inner {
+  background: #d2f2e3;
+  color: #548e79;
+}
+
+.tile.tile-64 .tile-inner {
+  background: #fff0bd;
+  color: #a58b4e;
+}
+
+.tile.tile-128 .tile-inner {
+  background: #ffd6ba;
+  color: #a87558;
+}
+
+.tile.tile-256 .tile-inner {
+  background: #f5c9e7;
+  color: #965e89;
+}
+
+.tile.tile-512 .tile-inner {
+  background: #cfc8fa;
+  color: #675b9b;
+}
+
+.tile.tile-1024 .tile-inner {
+  background: #bfe7f4;
+  color: #477f98;
+}
+
+.tile.tile-2048 .tile-inner {
+  background: #f5c6dc;
+  color: #985c7c;
+  box-shadow: 0 0 24px rgba(245, 198, 220, 0.8);
+}
+
+/* Higher-value tiles */
+.tile.tile-super .tile-inner {
+  background: #d5b5eb;
+  color: #ffffff;
+}
+
+/* Remove original tile shadows */
+.tile .tile-inner {
+  box-shadow: none;
+}
+
+/* Win and game-over overlays */
+.game-message {
+  border-radius: 14px;
+}
+
+.game-message.game-won {
+  background: rgba(245, 198, 220, 0.8);
+}
+
+.game-message.game-over {
+  background: rgba(255, 247, 251, 0.85);
+}
+
+.game-message p {
+  color: #916b91;
+}
+
+/* Links and dividers */
+a {
+  color: #b77fae;
+}
+
+hr {
+  border-color: #eadbea;
+}
